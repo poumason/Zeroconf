@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/poumason/Zeroconf</PackageProjectUrl>
+    <Description>Bonjour support for .NET Standard 2.0, .NET Core, .NET Framework, Xamarin, and UWP</Description>
+    <Authors>Pou Lin</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RefactoringEssentials" Version="5.6.0" PrivateAssets="all" />
+    <PackageReference Include="System.Reactive" Version="4.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\Zeroconf\AdapterInformation.cs" Link="AdapterInformation.cs" />
+    <Compile Include="..\..\Zeroconf\AsyncLock.cs" Link="AsyncLock.cs" />
+    <Compile Include="..\..\Zeroconf\Dns\Header.cs" Link="Dns\Header.cs" />
+    <Compile Include="..\..\Zeroconf\Dns\Question.cs" Link="Dns\Question.cs" />
+    <Compile Include="..\..\Zeroconf\Dns\Record.cs" Link="Dns\Record.cs" />
+    <Compile Include="..\..\Zeroconf\Dns\RecordA.cs" Link="Dns\RecordA.cs" />
+    <Compile Include="..\..\Zeroconf\Dns\RecordAAAA.cs" Link="Dns\RecordAAAA.cs" />
+    <Compile Include="..\..\Zeroconf\Dns\RecordNSEC.cs" Link="Dns\RecordNSEC.cs" />
+    <Compile Include="..\..\Zeroconf\Dns\RecordPTR.cs" Link="Dns\RecordPTR.cs" />
+    <Compile Include="..\..\Zeroconf\Dns\RecordReader.cs" Link="Dns\RecordReader.cs" />
+    <Compile Include="..\..\Zeroconf\Dns\RecordSRV.cs" Link="Dns\RecordSRV.cs" />
+    <Compile Include="..\..\Zeroconf\Dns\RecordTXT.cs" Link="Dns\RecordTXT.cs" />
+    <Compile Include="..\..\Zeroconf\Dns\RecordUnknown.cs" Link="Dns\RecordUnknown.cs" />
+    <Compile Include="..\..\Zeroconf\Dns\Request.cs" Link="Dns\Request.cs" />
+    <Compile Include="..\..\Zeroconf\Dns\Response.cs" Link="Dns\Response.cs" />
+    <Compile Include="..\..\Zeroconf\Dns\RR.cs" Link="Dns\RR.cs" />
+    <Compile Include="..\..\Zeroconf\Dns\Structs.cs" Link="Dns\Structs.cs" />
+    <Compile Include="..\..\Zeroconf\DomainService.cs" Link="DomainService.cs" />
+    <Compile Include="..\..\Zeroconf\INetworkInterface.cs" Link="INetworkInterface.cs" />
+    <Compile Include="..\..\Zeroconf\NetworkInterface.cs" Link="NetworkInterface.cs" />
+    <Compile Include="..\..\Zeroconf\ServiceAnnouncement.cs" Link="ServiceAnnouncement.cs" />
+    <Compile Include="..\..\Zeroconf\ZeroconfOptions.cs" Link="ZeroconfOptions.cs" />
+    <Compile Include="..\..\Zeroconf\ZeroconfRecord.cs" Link="ZeroconfRecord.cs" />
+    <Compile Include="..\..\Zeroconf\ZeroconfResolver.Async.cs" Link="ZeroconfResolver.Async.cs" />
+    <Compile Include="..\..\Zeroconf\ZeroconfResolver.cs" Link="ZeroconfResolver.cs" />
+    <Compile Include="..\..\Zeroconf\ZeroConfResolver.Listener.cs" Link="ZeroConfResolver.Listener.cs" />
+    <Compile Include="..\..\Zeroconf\ZeroconfResolver.Observable.cs" Link="ZeroconfResolver.Observable.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dns\" />
+  </ItemGroup>
+
+</Project>
